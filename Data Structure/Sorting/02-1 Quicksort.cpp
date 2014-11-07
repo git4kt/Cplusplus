@@ -1,5 +1,10 @@
 
 
+/*
+Created: 10/2014
+Description:  Performs quicksort for distinct numbers in an array
+*/
+
 #include <iostream>
 
 
@@ -16,6 +21,7 @@ void print(T *begin, T* end)
 }
 
 //Returns position of pivot point
+// n = size of array
 int getPivot(int n)
 {
 	return 0;
@@ -73,13 +79,12 @@ void quickSort(T* array, int size)
 
 int main()
 {
-	int array [] = {5,2,1,3,6,4};
+	//int array [] = {5,2,1,3,6,4};
 	//int array [] = {1,2,3,4,5,6};
 	//int array [] = {6,5,4,3,2,1};
 	//int array [] = {3,1,4,6,5,2};
-	print(array, array+6);
-	quickSort(array, 6);
-	print(array, array+6);
-	//quickSort(array, 6);
-
+	int array [] = {3,9,8,4,6,10,2,5,7,1};
+	print(array, array+10);
+	quickSort(array, 10);
+	print(array, array+10);
 }
