@@ -20,7 +20,7 @@ class GraphS
 public:
 	//Construct and modify graph
 	GraphS(unsigned long N= 0);								//Construct an array of list of size N
-	~GraphS(){std::cout<<"object destroyed"<<std::endl;};
+	~GraphS(){};
 	void addEdge(unsigned long v, unsigned long e);			//add edge
 	void removeEdge(unsigned long v, unsigned long e);		//remove edge
 
