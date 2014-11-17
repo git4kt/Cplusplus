@@ -39,8 +39,8 @@ void DFS::traverse(GraphS* graph, unsigned long s, std::vector<bool>& check)
 	visited.push_back(s);						//keep record of visited nodes
 
 	//aggressively traverse through graph
-	auto it  = g->begin();
-	for(; it != g->end(); ++it)
+	auto it = g[s].begin();
+	for(; it != g[s].end(); ++it)
 	{
 		if(check[*it] == false) traverse(graph, *it, check);
 
@@ -55,6 +55,7 @@ void DFS::set(GraphS* graph, unsigned long s)
 	traverse(graph,s,check);
 }
 
+/*
 //test class.  Remove main to use DFS
 int main()
 {
@@ -83,3 +84,4 @@ int main()
 	std::cout<<std::endl;
 
 }
+*/
